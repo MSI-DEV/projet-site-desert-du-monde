@@ -9,7 +9,7 @@
 .container{
     display: flex;
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     flex-direction: column;
     text-align: center;
 }
@@ -39,11 +39,12 @@ ul li{
 }
 a{
     width: 100%;
-    display: flex;
+    display: block;
     justify-content: center;
     list-style-type: none;
     text-decoration: none;
     font-size: 25px;
+    color: black;
 }
 /* main */
 main{
@@ -51,6 +52,38 @@ main{
     flex-direction: column;
     align-items: center;
 }
+h1{
+    display: block;
+    margin-bottom: 30px;
+    font-family: font-family: 'Lora', serif;
+}
+.img-desert{
+    display: block;
+    width: 80%;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    display: block;
+    margin: 23px;
+    width: 80%;
+    text-align: center;
+}
+p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 2rem 50px;
+}
+footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
 
 
