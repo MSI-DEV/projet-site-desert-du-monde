@@ -2,8 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 20px;
     font-weight: 900;
+}
+html {
+    font-size: 20px;
+}
+body {
+    background-color: grey;
+    
 }
 /* header */
 .container{
@@ -12,19 +18,26 @@
     /* border: 1px solid red; */
     flex-direction: column;
     text-align: center;
+    background-color: #fff;
+    
 }
 header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1rem;
+    
+    
 }
-header h1{
-    align-items: center;
+h1{
     color: #BF5B04;
-    justify-content: center;
+    font-family:  'Lora', serif;
+    margin-left: 1rem;
+
 }
 nav{
-    width: 100%;   
+    width: 100%;
+      
 }
 
 ul li{
@@ -35,28 +48,27 @@ ul li{
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
+    list-style-type: none;
+    
+    
     
 }
 a{
     width: 100%;
     display: block;
     justify-content: center;
-    list-style-type: none;
     text-decoration: none;
     font-size: 25px;
     color: black;
 }
-/* main */
+/* ------------------------main----------------------- */
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-h1{
-    display: block;
-    margin-bottom: 30px;
-    font-family: font-family: 'Lora', serif;
-}
+
+
 .img-desert{
     display: block;
     width: 80%;
@@ -64,11 +76,13 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
+
 h2{
     display: block;
-    margin: 23px;
+    margin: 25px;
     width: 80%;
     text-align: center;
+    
 }
 p{
     padding-top: 10px;
@@ -83,7 +97,48 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-top: solid 1px black;
 
 }
 
+/* ----------------------Tablette-------------------- */
 
+
+
+@media screen and (min-width: 768px){
+
+    article{
+        border-bottom: solid red 2px;
+    }
+    }
+/* --------------------------Desktop------------------- */
+
+@media screen and  (min-width:1024px){
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav {
+    width: 60%;
+    
+}
+
+nav ul {
+width: 100%;
+display: flex;
+
+}
+
+nav li{
+    list-style-type: none;
+    width: 30%;
+}
+}
