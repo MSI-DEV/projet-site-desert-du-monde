@@ -17,29 +17,24 @@ body {
     margin: auto;
     /* border: 1px solid red; */
     flex-direction: column;
-    text-align: center;
     background-color: #fff;
-    
 }
 header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
-    
-    
+    padding: 1rem 0;
+    text-align: center;
 }
 h1{
     color: #BF5B04;
     font-family:  'Lora', serif;
-    margin-left: 1rem;
-
+    text-align: center;
+    margin: 1rem 0;
 }
 nav{
-    width: 100%;
-      
+    width: 100%;  
 }
-
 ul li{
     color: black;
     /* text-align: center; */
@@ -49,9 +44,7 @@ ul li{
     padding-top: 10px;
     padding-bottom: 10px;
     list-style-type: none;
-    
-    
-    
+    text-align: center;
 }
 a{
     width: 100%;
@@ -67,27 +60,22 @@ main{
     flex-direction: column;
     align-items: center;
 }
-
-
+article{
+    padding: 2rem;
+}
+article h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
 .img-desert{
     display: block;
-    width: 80%;
-    max-width: 540px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-h2{
-    display: block;
-    margin: 25px;
-    width: 80%;
-    text-align: center;
-    
+    width: 100%;
 }
 p{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 2rem 50px;
+    margin-top: 1rem;
+}
+section{
+    display: none;
 }
 footer{
     margin-top: 10px;
@@ -97,18 +85,61 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-top: solid 1px black;
-
+    border-top: solid 2px #F2F2F2;
 }
-
 /* ----------------------Tablette-------------------- */
-
-
 
 @media screen and (min-width: 768px){
 
     article{
-        border-bottom: solid red 2px;
+        /* border-bottom: solid red 2px; */
+        border-bottom: 2px solid #F2F2F2;
+    }
+    section{
+        display: flex;
+        justify-content: space-between;
+    }
+    .list-desert{
+        width: 30%;
+        margin-left: 2rem;
+        text-align: left;
+        /* border: 1px solid red; */
+    }
+    .list-desert h2{
+        text-align: left;
+        width: 100%;
+        padding: 1rem 0;
+        margin-left: 1rem;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    .list-desert li{
+        padding-left: .2rem;
+        font-size: 60%;    
+    }
+    .list-desert ol{
+        padding-top: 1rem;
+        margin-left: 2rem;
+        font-size: 150%;
+    }
+    .list-desert a{
+        font-size: 100%;
+        width: 100%;
+    }
+    .galerie{
+        width: 50%;
+        /* border: 1px solid blue; */
+    }
+    .galerie h2{
+        /* margin-bottom: 1rem; */
+        padding: 1rem 0;
+        text-align: left;
+        width: 100%;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    .galerie-images{
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
     }
     }
 /* --------------------------Desktop------------------- */
@@ -120,25 +151,85 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-bottom: solid 1px #F2F2F2;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    
+}
+article{
+    width: 80%;
+    border-bottom: solid white;
+}
+article h2{
+    font-size: 1.1rem;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22rem;
+    border: solid 1px green;
 }
 .logo-title{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
+    padding: .5rem ;
+    width: 50%;
+}
+.logo-title h1{
+    padding: .5rem;
 }
 nav {
-    width: 60%;
-    
+    width: 50%;   
 }
 
 nav ul {
-width: 100%;
-display: flex;
-
+    width: 100%;
+    display: flex;
 }
 
 nav li{
     list-style-type: none;
-    width: 30%;
+    background-color: white;  
 }
+a{
+    font-size: 80%;
+}
+.list-desert{
+    width: 100%;
+
+}
+.list-desert h2{
+    font-size: 1.1rem;
+    
+}
+.galerie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: solid 1px blue;
+}
+.galerie h2{
+    font-size: 1.1rem;
+    margin-left: 3rem;
+    
+}
+.galerie-images{
+    display: flex;
+    width: 80%;
+    border: solid 1px red; 
+    
+    
+}
+
+
+.galerie-images img{
+    margin-right: 1px;
+}
+
+
+
 }
