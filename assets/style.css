@@ -7,10 +7,6 @@
 html {
     font-size: 20px;
 }
-body {
-    /* background-color: grey; */
-    
-}
 /* header */
 .container{
     display: flex;
@@ -161,8 +157,9 @@ header{
 main{
     display: flex;
     flex-direction: row;
-    
-    
+    justify-content: space-between;
+    padding: 2rem;
+    justify-content: flex-start;
 }
 article{
     width: 100%;
@@ -171,15 +168,17 @@ article{
 }
 article h2{
     font-size: 1.1rem;
+    margin-top: 1rem;
 }
 section{
     display: flex;
     flex-direction: column;
     margin-bottom: 22rem;
-    margin-left: 5rem;
-    margin-right: 3rem;
+    margin-left: 8rem;
+    margin-right:4rem;
     margin-top: .5rem;
-    width: 30%;
+    width: 40%;
+    
     /* border: solid 1px green; */
 }
 .logo-title{
@@ -233,6 +232,7 @@ a{
     /* border: solid 1px red;  */
 }
 .galerie-images img{
-    margin-right: 1px;
+    margin-right: 4px;
+
 }
 }
